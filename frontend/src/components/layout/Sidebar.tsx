@@ -15,6 +15,7 @@ import {
   EyeIcon,
   WrenchScrewdriverIcon,
   ArrowDownTrayIcon,
+  ArchiveBoxIcon,
 } from '@heroicons/react/24/outline';
 import { useAuthStore, User } from '@/store/authStore';
 import { useChauffeurs } from '@/hooks/queries/useUsers';
@@ -44,6 +45,7 @@ const navigation: Array<{
   { name: 'Véhicules', href: '/vehicules', icon: TruckIcon, roles: ['admin'] },
   { name: 'Produits', href: '/produits', icon: CubeIcon, roles: ['admin'] },
   { name: 'Rapports', href: '/rapports', icon: ChartBarIcon, roles: ['admin'] },
+  { name: 'Chronopost', href: '/chronopost', icon: ArchiveBoxIcon, roles: ['admin'] },
 ];
 
 function SidebarContent() {

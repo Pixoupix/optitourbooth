@@ -25,6 +25,7 @@ const TourneeDetailPage = lazy(() => import('@/pages/TourneeDetailPage'));
 const DailyPlanningPage = lazy(() => import('@/pages/DailyPlanningPage'));
 const PreparationsPage = lazy(() => import('@/pages/PreparationsPage'));
 const RapportsPage = lazy(() => import('@/pages/RapportsPage'));
+const ChronopostPage = lazy(() => import('@/pages/ChronopostPage'));
 const MapPopupPage = lazy(() => import('@/pages/MapPopupPage'));
 
 // ============================================
@@ -214,6 +215,7 @@ function App() {
         <Route path="planning" element={<LazyPage><DailyPlanningPage /></LazyPage>} />
         <Route path="historique" element={<LazyPage><TourneesPage /></LazyPage>} />
         <Route path="rapports" element={<LazyPage><RapportsPage /></LazyPage>} />
+        <Route path="chronopost" element={<LazyPage><ChronopostPage /></LazyPage>} />
       </Route>
 
       {/* Routes Préparateur */}
